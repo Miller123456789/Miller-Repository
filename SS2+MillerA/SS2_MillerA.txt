@@ -1,6 +1,6 @@
 // Miller A
-// Title: Apple Tree
-// This semester I will just be trying to expand my skill and knowledge of coding,this first sketch is my starting point.
+// Title: Apple Tree Color Blast
+// This semester I will be trying to expand my skill and knowledge of coding, player will click the mouse to change all colors, along with the cloud moving back and forth.
 
 let treeColor, bgColor, appleColor;
 let cloudX = 0;  // Starting x position of the cloud
