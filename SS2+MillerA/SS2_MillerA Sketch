@@ -1,5 +1,5 @@
 Name: Miller Anderson 
-
+Title: Apple Tree Cloud
 
 let treeColor, bgColor, appleColor;
 let cloudX = 0;  // Starting x position of the cloud
