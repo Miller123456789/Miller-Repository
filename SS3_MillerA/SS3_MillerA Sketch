@@ -13,7 +13,7 @@ function setup() {
   bgColor = color(25, 20, 250);  // Blue for the background
   appleColor = color('Red');     // Red for the apples
 
-  background(bgColor);
+  background(bgColor); //background color
 
   fill(treeColor); // tree trunk
   stroke(treeColor);
