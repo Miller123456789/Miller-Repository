@@ -1,6 +1,6 @@
 // Name: Miller Anderson 
 // Title: Apple Tree Cloud
-// This semester I will be trying to expand my skill and knowledge of coding, player will click the mouse to switch direction of cloud. Also the cloud moves back and forth on its own.
+// This semester I will be trying to expand my skill and knowledge of coding, player will click the mouse to switch direction of cloud. Also the cloud moves back and forth on its own and grows continuously.
 
 let treeColor, bgColor, appleColor;
 let cloudX = 0;  // Starting x position of the cloud
