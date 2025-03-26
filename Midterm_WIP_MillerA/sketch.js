@@ -4,7 +4,7 @@
 
 let treeColor, bgColor, appleColor;
 let cloudX = 0;  // Starting x position of the cloud
-let cloudSpeed = 2; // Speed at which the cloud moves
+let cloudSpeed = 2; // Speed that the cloud moves
 let clouds = []; // Array to store multiple clouds
 
 function setup() {
