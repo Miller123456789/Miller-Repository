@@ -133,7 +133,7 @@ function mousePressed() {
     x: random(width),
     y: random(50, 150),
     speed: cloudSpeed
-  };
+  }
   clouds.push(newCloud);
 }
 
