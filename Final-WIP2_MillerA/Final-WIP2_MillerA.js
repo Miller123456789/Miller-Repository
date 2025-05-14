@@ -14,9 +14,14 @@ let meteorInterval = 200;
 function setup() {
   createCanvas(800, 400);
 
-  // Create humans with random skin tones
+  // Create humans with random skin tones using if...else
   for (let i = 0; i < 5; i++) {
-    let skinColor = random() < 0.5 ? color(255, 224, 189) : color(139, 69, 19);
+    let skinColor;
+    if (random() < 0.5) {
+      skinColor = color(255, 224, 189);
+    } else {
+      skinColor = color(139, 69, 19);
+    }
     humans.push({ x: random(width), y: height - 40, speed: random(0.5, 1.2), skin: skinColor });
   }
 
