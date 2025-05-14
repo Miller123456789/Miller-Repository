@@ -14,7 +14,7 @@ let meteorInterval = 200;
 function setup() {
   createCanvas(800, 400);
 
-  // Create humans with random skin tones using if...else
+  // Create humans 
   for (let i = 0; i < 5; i++) {
     let skinColor;
     if (random() < 0.5) {
@@ -37,7 +37,6 @@ function setup() {
 }
 
 function draw() {
-  // Replaced ternary with if...else
   if (isNight) {
     background(10);
   } else {
