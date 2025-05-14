@@ -1,6 +1,6 @@
-//Title: Meteor Shower
-//Name: Miller Anderson
-//Notes: This is a Meteor shower, press N to see the night and the shower, press R to reset.
+// Title: Meteor Shower
+// Name: Miller Anderson
+// Notes: This is a Meteor shower, press N to see the night and the shower, press R to reset.
 
 let isNight = false;
 let meteors = [];
@@ -37,7 +37,12 @@ function setup() {
 }
 
 function draw() {
-  background(isNight ? 10 : skyBlue());
+  // Replaced ternary with if...else
+  if (isNight) {
+    background(10);
+  } else {
+    background(skyBlue());
+  }
 
   if (isNight) {
     drawStars();
