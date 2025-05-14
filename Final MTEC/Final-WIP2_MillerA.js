@@ -101,15 +101,11 @@ function handleMeteors() {
 
   fill(255, 150, 0);
   noStroke();
-  for (let i = meteors.length - 1; i >= 0; i--) {
-    let m = meteors[i];
+  for (let m of meteors) {
     ellipse(m.x, m.y, 10, 10);
     m.x += m.speedX;
     m.y += m.speedY;
-
-    if (m.y > height) {
-      meteors.splice(i, 1);
-    }
+    // Meteors 
   }
 }
 
@@ -150,9 +146,8 @@ function drawBirds() {
   noFill();
 
   for (let b of birds) {
-    // wings
-    line(b.x - 12, b.y - 10, b.x, b.y);  // left wing
-    line(b.x, b.y, b.x + 12, b.y - 10);  // right wing
+    line(b.x - 12, b.y - 10, b.x, b.y); // left wing
+    line(b.x, b.y, b.x + 12, b.y - 10); // right wing
 
     b.x += b.speed;
     if (b.x > width + 20) b.x = -40;
