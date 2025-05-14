@@ -63,7 +63,7 @@ function drawSun() {
 function drawMoon() {
   fill(200);
   noStroke();
-  ellipse(700, 80, 60); // Main moon body
+  ellipse(700, 80, 60); // moon 
 
   fill(150); // Craters
   ellipse(685, 70, 10);
@@ -151,8 +151,8 @@ function drawBirds() {
 
   for (let b of birds) {
     // wings
-    line(b.x - 12, b.y - 10, b.x, b.y);         // left wing
-    line(b.x, b.y, b.x + 12, b.y - 10);         // right wing
+    line(b.x - 12, b.y - 10, b.x, b.y);  // left wing
+    line(b.x, b.y, b.x + 12, b.y - 10);  // right wing
 
     b.x += b.speed;
     if (b.x > width + 20) b.x = -40;
