@@ -16,7 +16,7 @@ let meteorInterval = 200;
 function setup() {
   createCanvas(800, 400);
 
-  // Create humans
+  // humans
   for (let i = 0; i < 5; i++) {
     let skinColor;
     if (random() < 0.5) {
@@ -32,17 +32,17 @@ function setup() {
     });
   }
 
-  // Generate stars
+  // stars
   for (let i = 0; i < 300; i++) {
     stars.push({ x: random(width), y: random(height) });
   }
 
-  // Create birds
+  // birds
   for (let i = 0; i < 5; i++) {
     birds.push({ x: random(width), y: random(50, 150), speed: random(1, 2) });
   }
 
-  // Default clouds
+  // clouds
   clouds.push({ x: 180, y: 95 });
   clouds.push({ x: 530, y: 115 });
 }
